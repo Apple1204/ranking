@@ -1,0 +1,23 @@
+#avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: -25%;
+}
+.card-body {
+    padding: 30px;
+}
+
+div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_length label {
+    margin-left: 15px;
+}
+
+.date {
+    width: 90px;
+}

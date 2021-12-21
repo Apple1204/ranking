@@ -1,0 +1,32 @@
+.modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: -50%;
+}
+
+.slider {
+    margin-top: 58px;
+    margin-bottom: 30px;
+}
+
+.spacing-30 {
+    margin-top: 30px;
+}
+.spacing-15 {
+    margin-top: 30px;
+}
+
+
+.card {
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+
+.hide {
+    display: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 175px !important;
+}

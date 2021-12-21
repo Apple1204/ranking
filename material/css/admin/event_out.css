@@ -1,0 +1,37 @@
+#avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none !important;
+    margin-top: -20%;
+}
+.competitor-orange {
+    border: 2px solid #ff9800;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+#flag {
+    width: 50px;
+    height: 25px;
+}
+.competitor-black {
+    border: 2px solid #999;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.list {
+    padding-left:25px;
+}
+
+#weight .dropdown-toggle, #category .dropdown-toggle {
+    width: 150px !important;
+}

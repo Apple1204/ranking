@@ -1,0 +1,215 @@
+body {
+    background-color: rgba(161, 161, 161, 0.08);
+}
+.row {
+    padding: 20px;
+}
+.division td {
+    width: 50px;
+    height:40px;
+    border-bottom:1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 16px 30px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+    top: -5px;
+    font-size: 12px;
+}
+
+.btn-group, .btn-group-vertical {
+    margin: 0px;
+}
+
+.card {
+    height:483px;
+}
+
+.card-box {
+    background-color: #fff;
+}
+
+.division td:last-child {
+    border-right: none;
+}
+
+.division td:hover {
+    border-bottom: 2px solid #00bcd4;
+}
+
+.division .active {
+    border-bottom:5px solid #6699cc;
+}
+
+/* select {
+    display: block;
+    border-radius: 6px;
+    padding: 10px 5px;
+    color: #fff;
+    background-color: #747071;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 14%);
+    border:none;
+} */
+
+a:hover {
+    color:#fff;
+}
+
+.form-control, .is-focused .form-control {
+    background-image: linear-gradient(to top, #2196f3 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+}
+
+#ranking_paginate {
+    margin: 20px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #ffffff !important;
+    background-color: #2196f3 !important;
+    border-color: #2196f3 !important;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width:100%;
+}
+
+.card-box .bootstrap-select {
+    width: 200px !important;
+}
+
+#avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.np {
+    width: 25px;
+    padding-right: 0px !important;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.card-box {
+    overflow-x: auto;
+}
+
+#photo {
+    width: 27px;
+    height: 17px;
+    border: 1px solid gray;
+    margin-right: 0.2em;
+}
+
+#ranking {
+    border:none;
+}
+
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+    border: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    margin-top: -50px;
+    margin-bottom: 18px;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width:-webkit-fill-available;
+}
+
+/* simple/extends */
+:root {
+    --accent: #ff9800;
+    --border-width: 1px;
+    --border-radius: 3px;
+    --font-size: 17px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: sans-serif;
+    margin-top: 15px;
+    /* left: -33%;
+    position: relative; */
+    /* position: absolute;
+    left: 20%;
+    top: 25px; */
+}
+
+.toggle {
+    position: relative;
+    border: solid var(--border-width) var(--accent);
+    border-radius: var(--border-radius);
+    transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
+    transform-style: preserve-3d;
+    left:-43px;
+}
+
+.toggle>input[type="radio"] {
+    display: none;
+}
+
+.toggle>#choice1:checked~#flap {
+    transform: rotateY(-180deg);
+}
+
+.toggle>#choice1:checked~#flap>.view {
+    transform: rotateY(-180deg);
+}
+
+.toggle>#choice2:checked~#flap {
+    transform: rotateY(0deg);
+}
+
+.toggle>label {
+    display: inline-block;
+    padding: 6px;
+    font-size: var(--font-size);
+    text-align: center;
+    color: var(--accent);
+    cursor: pointer;
+    margin-bottom: 0px;
+    width: 138px;
+}
+
+.toggle>label,
+.toggle>#flap {
+    text-transform: capitalize;
+}
+
+.toggle>#flap {
+    position: absolute;
+    top: calc( 0px - var(--border-width));
+    left: 50%;
+    height: calc(100% + var(--border-width) * 2);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    background-color: var(--accent);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+}
+
+.toggle>#flap>.view {
+    color: #fff;
+    transition: transform 0s linear .25s;
+    transform-style: preserve-3d;
+}
+

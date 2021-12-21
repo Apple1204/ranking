@@ -1,0 +1,10 @@
+.modal-content {
+    background-color: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: -25%;
+}
+.card .card-body .col-form-label {
+    margin-left: 15px;
+    text-align: left;
+}
