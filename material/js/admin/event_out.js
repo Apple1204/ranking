@@ -146,7 +146,7 @@ function searchLeague() {
         if(data[0] == "success")
         {
             drawLeague(data[1].competitors);    
-            console.log(data[1].competitors);
+            // console.log(data[1].competitors);
         }
     });
 }
@@ -154,6 +154,7 @@ function searchLeague() {
 function drawLeague(data) {
     $(".table_league").empty();
     var count = 1;
+    console.log(data);
     for(var item of data)
     {
         var action = "edit";
@@ -169,11 +170,14 @@ function drawLeague(data) {
             person = "";
             eId = 0;
         }
+        console.log(item.name)
         var content = `<tr>
                         <td class="text-center">${count}</td>
                         <td>${item.first_name} ${item.last_name}</td>
                         <td><img src="${img_url}/${item.photo}" alt="" id="avatar"></td>
                         <td>${oLeague}</td>
+                        <td>${item.name}</td>
+                        <td>${item.weight}</td>
                         <td class="td-actions text-right">
                             ${person}
                             <button type="button" rel="tooltip" class="btn btn-success" onclick="modalLeague(${item.id},${eId})">

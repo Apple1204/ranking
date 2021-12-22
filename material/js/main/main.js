@@ -123,7 +123,7 @@ function drawTblBody(data, eData) {
                     <td class="np"><img src="${avatar_url}/${item.avatar}" id="avatar" alt="avatar"></td>
                     <td>${item.first_name} ${item.last_name}</td>
                     <td><img src="${photo_url}/${item.photo}" id="photo" alt="league"> ${item.league}</td>
-                    <td>${parseInt(item.point)}</td>`;
+                    <td>${item.point ? parseInt(item.point) : 0}</td>`;
         for(var id of eventId)
         {
             content += `<td class="event_${id}"></td>`;

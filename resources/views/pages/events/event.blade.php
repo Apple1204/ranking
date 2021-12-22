@@ -22,6 +22,7 @@
                             <tr>
                                 <th class="text-center">#</th>
                                 <th>Name</th>
+                                <th style="width: 70px">Order</th>
                                 <th class="text-right">Actions</th>
                             </tr>
                         </thead>
@@ -31,6 +32,7 @@
                             <tr>
                                 <td class="text-center">{{ $i }}</td>
                                 <td>{{ $item->name }}</td>
+                                <td><input type="number" class="form-control order{{$item->id}}" value={{$item->order}} min="0" onChange="updateOrder({{$item}})"></td>
                                 <td class="td-actions text-right">
                                     <button type="button" rel="tooltip" class="btn btn-success" onclick="update({{ $item }})">
                                         <i class="material-icons">edit</i>

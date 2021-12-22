@@ -94,6 +94,8 @@
                     <th>Name</th>
                     <th>Photo</th>
                     <th>League</th>
+                    <th>Category</th>
+                    <th>Weight</th>
                     <th class="text-right">Actions</th>
                 </tr>
               </thead>

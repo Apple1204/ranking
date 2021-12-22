@@ -12,7 +12,7 @@ class EventsController extends Controller
 {
     //
     public function index() {
-        $event = Event::select('id', 'name')->get();
+        $event = Event::select('id', 'name', 'order')->get();
         return view('pages.events.event', compact('event'));
     }
 

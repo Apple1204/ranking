@@ -47,9 +47,11 @@ class ChangeController extends Controller
     }
 
     public function searchLeague(Request $request) {
-        $competitors = Competitors::selectRaw('competitors.id as id, first_name, last_name, competitors.photo, league_history.id as eId, a.photo as oImage, a.short_name as oShort')
+        $competitors = Competitors::selectRaw('competitors.id as id, first_name, last_name, category.name, weight, competitors.photo, league_history.id as eId, a.photo as oImage, a.short_name as oShort')
                     ->leftJoin('league_history', 'competitors.id', '=', 'competitorId')
                     ->leftJoin('leagues AS a', 'competitors.leagueId', '=', 'a.id')
+                    ->leftJoin('division', 'division.id', '=', 'competitors.divisionId')
+                    ->leftJoin('category', 'division.categoryId', '=', 'category.id')
                     ->where('leagueId', '=', $request->league)
                     ->where(function($q) use($request) {
                         $q->where('first_name', 'like', '%'.$request->name.'%')

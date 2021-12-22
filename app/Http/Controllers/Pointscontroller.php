@@ -7,7 +7,7 @@ use App\Models\Points;
 use App\Models\Competitors;
 use App\Models\Event;
 use App\Models\Category;
-use App\Models\division;
+use App\Models\Division;
 use Illuminate\Support\Facades\DB;
 
 class PointsController extends Controller
