@@ -96,7 +96,7 @@ function destroyDv(id) {
                 if(data == "success")
                 {
                     var msg = "division deleted successfully.";
-                    window.location.href = "/home/category";
+                    window.location.href = "./category";
                     showNotification("top", "right", "success", msg);
                 }
             })

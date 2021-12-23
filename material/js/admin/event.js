@@ -6,9 +6,6 @@ $(document).ready(function() {
     for(const key of Object.keys(errors))
         for(var msg of errors[key])
             showNotification("top", "right", "rose", msg);
-    $(".order").on('change', function() {
-        updateOrder($(".order").val());
-    })
 });
 
 function destroy(id) {
@@ -27,7 +24,7 @@ function destroy(id) {
                 if(data == "success")
                 {
                     var msg = "event deleted successfully.";
-                    window.location.href = "/home/events/event";
+                    window.location.href = "./event";
                     showNotification("top", "right", "success", msg);
                 }
             })

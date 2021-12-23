@@ -35,7 +35,7 @@ function destroy(id) {
                 if(data == "success")
                 {
                     var msg = "league deleted successfully.";
-                    window.location.href = "/home/league";
+                    window.location.href = "./league";
                     showNotification("top", "right", "success", msg);
                 }
             })
